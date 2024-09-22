@@ -1,0 +1,32 @@
+/* Styles for the body to create a column layout */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Set full height */
+}
+
+/* Styles for the main to create a row layout */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Allow main to grow */
+}
+
+/* Styles for the article and aside */
+article {
+    flex: 2; /* Take ⅔ of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+aside {
+    flex: 1; /* Take ⅓ of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Additional styles for header and footer (optional) */
+header, footer {
+    background-color: #f8f9fa; /* Light background for header and footer */
+    padding: 10px; /* Padding for spacing */
+    text-align: center; /* Center text */
+}
